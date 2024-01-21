@@ -13,12 +13,12 @@
   shirtSize = "XL";
   shirtSize = "XXL";
 
-  function greeting(myText: UserID, sizes: Sizes) {
+  function greeting(userId: UserID, sizes: Sizes) {
     if (typeof userId === "string") {
-      console.log(`string ${userId.toLocaleLowerCase()}`);
+      console.log(`string ${userId.toLocaleLowerCase()} talla: ${sizes}`);
     }
-    else (typeof userId === "number") {
-
+    else {
+      console.log(`string ${userId} talla: ${sizes}`);
     }
   }
 
